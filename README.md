@@ -1,6 +1,6 @@
 # News
 News application using api
-Newsapi 를 사용하면 계속 BasicNetwork.performRequest: Unexpected Response code 404 for http://newsapi.org/v2/......... 
+* Newsapi 를 사용하면 계속 BasicNetwork.performRequest: Unexpected Response code 404 for http://newsapi.org/v2/......... 
 에러가 계속 떠서 구글창에 직접쳐보면 또 값은 나오고...php 파일을 서버에 올려서 해결했다.
 
 
