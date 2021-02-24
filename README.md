@@ -5,6 +5,6 @@ Newsapi 를 사용하면 계속 BasicNetwork.performRequest: Unexpected Response
 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/73155839/109002570-be792500-76e9-11eb-85a1-63f647a9c42e.png" height="100px" width="300px">
-<img src="https://user-images.githubusercontent.com/73155839/109002587-c2a54280-76e9-11eb-9231-fc857de38212.png" height="100px" width="300px">
+<img src="https://user-images.githubusercontent.com/73155839/109002570-be792500-76e9-11eb-85a1-63f647a9c42e.png" width="20%" height="30%">
+<img src="https://user-images.githubusercontent.com/73155839/109002587-c2a54280-76e9-11eb-9231-fc857de38212.png" width="20%" height="30%">
 </p>
