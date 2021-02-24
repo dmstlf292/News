@@ -47,10 +47,10 @@ public class NewsDetailActivity extends Activity {
             if(title != null) {
                 TextView_title.setText(title);
             }
-            String content = this.news.getContent();
-            if(content != null) {
+            String description = this.news.getDescription();
+            if(description != null) {
                 //전체 본문은 url 값의 실제 뉴스 사이트에 있으며, 해당 전체 본문을 불러오기 위해서는 스크래핑 (크롤링) 기술로 읽어와야 합니다.
-                TextView_content.setText(content);
+                TextView_content.setText(description);
             }
 
         }

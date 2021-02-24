@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class NewsData implements Serializable {
     private String title;
     private String urlToImage;
-    private String content;
+    private String description;
 
     public String getTitle() {
         return title;
@@ -23,11 +23,11 @@ public class NewsData implements Serializable {
         this.urlToImage = urlToImage;
     }
 
-    public String getContent() {
-        return content;
+    public String getDescription() {
+        return description;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

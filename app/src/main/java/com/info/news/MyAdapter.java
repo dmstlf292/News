@@ -72,9 +72,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         holder.TextView_title.setText(news.getTitle());
 
-        String content = news.getContent();
-        if(content != null && content.length() > 0) {
-            holder.TextView_content.setText(content);
+        String description = news.getDescription();
+        if(description != "null" && description.length() > 0) {
+            holder.TextView_content.setText(description);
         }
         else {
             holder.TextView_content.setText("-");

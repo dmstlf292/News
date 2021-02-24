@@ -59,7 +59,8 @@ public class NewsActivity extends AppCompatActivity {
 
 
 
-        String url = "http://newsapi.org/v2/top-headlines?country=nz&apiKey=edc3ea50f00f4c4d86bda19cca7009f6";
+        String url = "http://selene292.cafe24.com/NewsApi.php";
+        //String url ="http://newsapi.org/v2/top-headlines?country=kr&apiKey=";
 
         // Request a string response from the provided URL.
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -67,7 +68,7 @@ public class NewsActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
 
-                       // Log.d("NEWS", response);
+                        //Log.d("NEWS", response);
 
                         try {
 
@@ -89,7 +90,7 @@ public class NewsActivity extends AppCompatActivity {
                                 NewsData newsData = new NewsData();
                                 newsData.setTitle(obj.getString("title"));
                                 newsData.setUrlToImage(obj.getString("urlToImage"));
-                                newsData.setContent(obj.getString("content"));
+                                newsData.setDescription(obj.getString("description"));
                                 news.add(newsData);
 
                             }
@@ -102,9 +103,22 @@ public class NewsActivity extends AppCompatActivity {
                                     Object obj = v.getTag();
                                     if(obj != null) {
                                         int position = (int)obj;
-                                        ((MyAdapter)mAdapter).getNews(position).getContent();
+                                        ((MyAdapter)mAdapter).getNews(position).getDescription();
+                                        //그냥 심플하게 빈 화면에 description 정보만 출력하는 방법
                                         Intent intent = new Intent(NewsActivity.this, NewsDetailActivity.class);
                                         intent.putExtra("news", ((MyAdapter)mAdapter).getNews(position));
+
+
+                                        //1. 본문
+                                        //2. 전체
+                                        //2-1. 하나씩
+                                        //2-2. 한번에~
+
+                                        //1. 햄버거 메뉴 이거 하기!!!!
+                                        //2. 채팅앱
+
+                                        //원하는 뉴스 모아서 보고 싶다. - xml(rss) - newsapi 연예, 정치, 사회- 이거 하기!!!!!
+                                        startActivity(intent);
 
                                     }
                                 }
